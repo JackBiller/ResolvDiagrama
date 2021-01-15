@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Resolv Diagrama Demonstração</title>
+
+	<link rel="icon" href="./img/diagrama_c_icon.png" type="image/x-icon" />
+
+	<link rel="stylesheet" href="./lib/bootstrap/dist/css/bootstrap.min.css">
+	<script src="./lib/jquery/dist/jquery.min.js"></script>
+	<script src="./lib/bootstrap/dist/js/bootstrap.min.js"></script>
+
+	<script src="./resolvDiagrama.js"></script>
+</head>
+<body>
+	<h1>Resolv Diagrama Demonstração</h1>
+	<div id="teste"></div>
+</body>
+<script>
+
+$("#teste").html(
+	resolvDiagrama({
+		notas: [
+			{ corda: 6, nulo: true },
+			{ corda: 5, casa: 3 , dedo: 3 },
+			{ corda: 4, casa: 2 , dedo: 2 },
+			{ corda: 3, casa: 0 },
+			{ corda: 2, casa: 1 , dedo: 1 },
+			{ corda: 1, casa: 0 },
+		],
+		acordeNome: 'C',
+		descForm: 'acordeC',
+	})
+	+ resolvDiagrama({
+		notas: [
+			{ corda: 6, nulo: true },
+			{ corda: 5, nulo: true },
+			{ corda: 4, casa: 0 },
+			{ corda: 3, casa: 2 , dedo: 1 },
+			{ corda: 2, casa: 3 , dedo: 3 },
+			{ corda: 1, casa: 2 , dedo: 2 },
+		],
+		acordeNome: 'D',
+		descForm: 'acordeD',
+	})
+);
+
+</script>
+</html>
