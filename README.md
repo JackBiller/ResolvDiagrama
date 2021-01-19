@@ -21,6 +21,7 @@ resolvDiagrama({
 ~~~
 
 Saída:
+<br>
 ![Diagrama de C](./img/diagrama_c.png)
 
 
@@ -36,6 +37,7 @@ descForm            | Param identificador
 casas               | Número de casas que vai mostrar no diagrama
 cordas              | Número de cordas que possui o instrumento
 margin              | Percentual que vai dar de margin
+capotraste          | Representa a casa o diagrama começa
 
 <br>
 
