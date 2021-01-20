@@ -19,8 +19,8 @@
 </body>
 <script>
 
-$("#teste").html(
-	resolvDiagrama({
+$("#teste").html(''
+	+ resolvDiagrama({
 		notas: [
 			{ corda: 6, nulo: true },
 			{ corda: 5, casa: 3 , dedo: 3 },
@@ -56,6 +56,18 @@ $("#teste").html(
 		acordeNome: 'D',
 		descForm: 'acordeD2',
 		capotraste: 2,
+	})
+	+ resolvDiagrama({
+		notas: [
+			{ corda: 6, nulo: true },
+			{ corda: 5, casa: 2 , dedo: 1 },
+			{ corda: 4, casa: 4 , dedo: 2 },
+			{ corda: 3, casa: 4 , dedo: 3 },
+			{ corda: 2, casa: 4 , dedo: 4 },
+			{ corda: 1, casa: 2 , dedo: 1 },
+		],
+		acordeNome: 'B',
+		descForm: 'acordeB',
 	})
 );
 
